@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppBarbearia"
+             x:Class="AppBarbearia.MainPage"
+             BackgroundImage="Fundopadrao">
+
+    <StackLayout>
+        <Image Source=""
+               Margin="50"
+               WidthRequest="200"
+               HeightRequest="100"/>
+        
+        <Entry x:Name="entryUsuario" TextColor="Black" FontSize="20" Placeholder="Usuário" PlaceholderColor="Black" HorizontalTextAlignment="Center" Margin="10"/>
+        
+        <Entry x:Name="entrySenha" TextColor="Black" FontSize="20" Placeholder="Senha" PlaceholderColor="Black" IsPassword="True" HorizontalTextAlignment="Center" Margin="10"/>
+        
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Entrar" x:Name="btnEntrar" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10"
+                    BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnEntrar_Clicked"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Esqueci a senha" x:Name="btnEsqueciSenha" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="5, 0, 0, 0"
+                    BackgroundColor="Transparent" BorderRadius="10" TextColor="Black" Clicked="BtnEsqueciSenha_Clicked"/>
+            
+            <Button Text="Crie sua conta" x:Name="btnNovaConta" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 0, 5, 0"
+                    BackgroundColor="Transparent" BorderRadius="10" TextColor="Black" Clicked="BtnNovaConta_Clicked"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <ImageButton Source="ic_facebook" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" Margin="10, 250, 10, 10" x:Name="btnFacebook"/>
+            
+            <ImageButton Source="ic_google" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" Margin="10, 250, 10, 10" x:Name="btnGoogle"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.CPromocoesPage"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <StackLayout>
+            <Label Text="Cadastro de Promoções" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Status: " TextColor="Black" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"/>
+                <Picker x:Name="pickerStatusPromocao" Title="Escolha" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0">
+                    <Picker.Items>
+                        <x:String>Ativado</x:String>
+                        <x:String>Desativado</x:String>
+                    </Picker.Items>
+                </Picker>
+
+            <Label Text="Nome da promoção: " TextColor="Black" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 0"/>
+            <Entry x:Name="entryNomePromocao" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"/>
+
+            <Label Text="Descrição: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+            <Entry x:Name="entryDescricaoPromocao" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+            <Label Text="Tempo: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+            <Picker x:Name="pickerTempoPromocao" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0">
+                <Picker.Items>
+                    <x:String>10 Min</x:String>
+                    <x:String>15 Min</x:String>
+                    <x:String>20 Min</x:String>
+                    <x:String>25 Min</x:String>
+                    <x:String>30 Min</x:String>
+                    <x:String>35 Min</x:String>
+                    <x:String>40 Min</x:String>
+                    <x:String>45 Min</x:String>
+                    <x:String>50 Min</x:String>
+                    <x:String>55 Min</x:String>
+                    <x:String>1 Hora</x:String>
+                    <x:String>1 Hora 15 Min</x:String>
+                    <x:String>1 Hora 30 Min</x:String>
+                    <x:String>2 Horas</x:String>
+                    <x:String>2 Horas 50 Min</x:String>
+                    <x:String>3 Horas</x:String>
+                    <x:String>3 Horas 30 Min</x:String>
+                    <x:String>4 Horas</x:String>
+                    <x:String>5Horas</x:String>
+                    <x:String>6Horas</x:String>
+                    <x:String>7Horas</x:String>
+                    <x:String>8Horas</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Valor: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+            <Entry x:Name="entryValorPromocao" TextColor="Black" Keyboard="Numeric" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+            <Button Text="Cadastrar nova promoção" x:Name="btnCPromocao" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+            <Button Text="Atualizar promoção" x:Name="btnAPromocao" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+            <Button Text="Listar Promoções" x:Name="btnLPromoções" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

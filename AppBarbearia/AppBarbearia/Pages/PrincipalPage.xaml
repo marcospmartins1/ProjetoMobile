@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.PrincipalPage"
+             BackgroundImage="Fundopadrao">
+
+    <StackLayout>
+        <Label Text="Bem vindo ao aplicativo -Marcos Barbearia-" BackgroundColor="Transparent" TextColor="Black" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
+
+        <StackLayout Orientation="Horizontal">
+            <ImageButton Source="ic_agendar" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="10, 15, 3, 5" x:Name="btnAgendar" Clicked="BtnAgendar_Clicked"/>
+
+            <ImageButton Source="ic_cliente" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="0, 15, 3, 5" x:Name="btnCliente" Clicked="BtnCliente_Clicked"/>
+
+            <ImageButton Source="ic_funcionario" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="0, 15, 3, 5" x:Name="btnFuncionario" Clicked="BtnFuncionario_Clicked"/>
+
+            <ImageButton Source="ic_promocao" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="0, 15, 3, 5" x:Name="btnPromocao" Clicked="BtnPromocao_Clicked"/>
+
+            <ImageButton Source="ic_servico" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Margin="0, 15, 10, 5" x:Name="btnServico" Clicked="BtnServico_Clicked"/>
+        </StackLayout>
+        <DatePicker FontAttributes="None" TextColor="White" FontSize="Small" HorizontalOptions="FillAndExpand" Margin="10, 650, 10, 10"></DatePicker>
+    </StackLayout>
+</ContentPage>

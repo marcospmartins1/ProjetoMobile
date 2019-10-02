@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.CClientePage"
+             BackgroundColor="White">
+
+
+    <StackLayout>
+        <Label Text="Cadastro de Clientes" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Nome do cliente: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryNome" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+        
+        <Label Text="CPF: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryCPF" TextColor="Black" Keyboard="Numeric" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+        
+        <Label Text="Data de nascimento: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryData" TextColor="Black" Keyboard="Numeric" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Sexo: " TextColor="Black" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 0"/>
+        <Picker x:Name="pickerSexo" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Masculino</x:String>
+                    <x:String>Feminino</x:String>
+                    <x:String>Outro</x:String>
+                </Picker.Items>
+        </Picker>
+
+
+        <Label Text="E-mail: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryEmail" TextColor="Black" Keyboard="Email" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Telefone celular: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryTelefone" TextColor="Black" Keyboard="Telephone" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Observação: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryObservacao" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Button Text="Cadastrar novo cliente" x:Name="btnCCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        <Button Text="Atualizar Cliente" x:Name="btnACliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        <Button Text="Listar Clientes" x:Name="btnLCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

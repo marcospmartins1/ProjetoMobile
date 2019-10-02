@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.CFuncionarioPage"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <Label Text="Cadastro de Funcionários" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Nome do Funcionário: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryNomeFuncionario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+        
+        <Label Text="CPF: " TextColor="Black" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryCPFFuncionario" TextColor="Black" Keyboard="Numeric" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Data de nascimento: " TextColor="Black" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryDataFuncionario" TextColor="Black" Keyboard="Numeric" HorizontalTextAlignment="Start"  Margin="10, 0, 10, 0"/>
+
+        <Label Text="Sexo: " TextColor="Black" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 0"/>
+            <Picker x:Name="pickerSexoFuncionario" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0">
+                <Picker.Items>
+                    <x:String>Masculino</x:String>
+                    <x:String>Feminino</x:String>
+                    <x:String>Outro</x:String>
+                </Picker.Items>
+            </Picker>
+
+
+        <Label Text="E-mail: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryEmailFuncionario" TextColor="Black" Keyboard="Email" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Telefone celular: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryTelefoneFuncionario" TextColor="Black" Keyboard="Telephone" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Horário de atendimento: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Picker x:Name="pickerHorarioFuncionario" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0">
+            <Picker.Items>
+                <x:String>Manhã</x:String>
+                <x:String>Tarde</x:String>
+                <x:String>Manhã/Tarde</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button Text="Cadastrar novo funcionário" x:Name="btnCFuncionario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        <Button Text="Atualizar Funcionário" x:Name="btnAFuncionario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        <Button Text="Listar Funcionários" x:Name="btnLFuncionários" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

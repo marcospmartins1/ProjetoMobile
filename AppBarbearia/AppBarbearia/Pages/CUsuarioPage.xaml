@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.CUsuarioPage"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <Label Text="Registre-se agora" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Nome do usuário: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryNomeUsuario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Senha: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entrySenhaUsuario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="Confirmar a senha: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryConfirmaSenhaUsuario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Label Text="E-mail: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
+        <Entry x:Name="entryEmailUsuario" TextColor="Black" Keyboard="Email" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+
+        <Button Text="Registrar" x:Name="btnCUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnCUsuario_Clicked"/>
+        <Button Text="Limpar dados" x:Name="btnLimparUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnLimparUsuario_Clicked"/>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.MenuPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ContentPage.Content>
+                <StackLayout BackgroundColor="White">
+                    <TableView Intent="Menu">
+                        <TableSection>
+                            <ViewCell x:Name="PaginaPrincipal" Tapped="PaginaPrincipal_Tapped">
+                                <StackLayout>
+                                    <Label Text="Início" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaAgendamento" Tapped="PaginaAgendamento_Tapped">
+                                <StackLayout>
+                                    <Label Text="Agendamentos" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaCliente" Tapped="PaginaCliente_Tapped">
+                                <StackLayout>
+                                    <Label Text="Cadastro de clientes" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White" />
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaFuncionario" Tapped="PaginaFuncionario_Tapped">
+                                <StackLayout>
+                                    <Label Text="Cadastro de funcionários" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaPromocao" Tapped="PaginaPromocao_Tapped">
+                                <StackLayout>
+                                    <Label Text="Cadastro de promoções" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaServico" Tapped="PaginaServico_Tapped">
+                                <StackLayout>
+                                    <Label Text="Cadastro de serviços" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaUsuario" Tapped="PaginaUsuario_Tapped">
+                                <StackLayout>
+                                    <Label Text="Usuário" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaSobre1" Tapped="PaginaSobre1_Tapped">
+                                <StackLayout>
+                                    <Label Text="Sobre o aplicativo" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                </StackLayout>
+                            </ViewCell>
+                            
+                            <ViewCell x:Name="PaginaSobre" Tapped="PaginaSobre_Tapped">
+                                    <StackLayout>
+                                    <Label Text="Sobre o desenvolvimento" HorizontalTextAlignment="Center" FontSize="22" Margin="10" TextColor="Black" BackgroundColor="White"/>
+                                    </StackLayout>
+                            </ViewCell>
+                            
+                        </TableSection>
+                    </TableView>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

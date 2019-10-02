@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBarbearia.Pages.Sobre">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Bem-Vindo ao aplicativo Marcos Barbearia, esse aplicativo foi criado pelo aluno Marcos Paulo da turma 27 do curso Técnico de Informática do Senac de Botucatu. Esse programa tem como fundamento ajudar
+                         uma pessoa a gerenciar sua barbearia/salão de beleza.  Esse programa conta com funcionalidades simples mas funcionais." Margin="20, 50, 20, 10" TextColor="Black" FontAttributes="Italic" FontSize="22"/>
+            
+            <Button Text="Visite o site da Barbearia" x:Name="btnSite" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10"
+                    BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
