@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Bem-Vindo ao aplicativo Marcos Barbearia, esse aplicativo possui as seguintes funcionalidades: Realização de agendamentos, cadastro de clientes, cadastro de funcionários, cadastro de serviços, cadastro de promoções e
-                   cadastro de usuário para acessar o sistema" Margin="20, 50, 20, 10" TextColor="Black" FontAttributes="Italic" FontSize="22"/>
+                   cadastro de usuário para acessar o sistema" Margin="20, 50, 20, 10" TextColor="Black" FontSize="22"/>
             
             <Button Text="Visite o site da Barbearia" x:Name="btnSite" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10"
                     BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>

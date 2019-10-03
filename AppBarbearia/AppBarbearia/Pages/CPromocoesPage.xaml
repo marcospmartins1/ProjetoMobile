@@ -53,12 +53,19 @@
             <Label Text="Valor: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
             <Entry x:Name="entryValorPromocao" TextColor="Black" Keyboard="Numeric" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
-            <Button Text="Cadastrar nova promoção" x:Name="btnCPromocao" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cadastrar" x:Name="btnCPromocao" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-            <Button Text="Atualizar promoção" x:Name="btnAPromocao" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"
+                <Button Text="Atualizar" x:Name="btnAPromocao" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-            <Button Text="Listar Promoções" x:Name="btnLPromoções" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Apagar" x:Name="btApagarPromoções" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+                <Button Text="Listar" x:Name="btnLPromoções" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 </ContentPage>

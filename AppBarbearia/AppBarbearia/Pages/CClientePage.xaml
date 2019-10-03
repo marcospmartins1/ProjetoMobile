@@ -36,11 +36,18 @@
         <Label Text="Observação: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
         <Entry x:Name="entryObservacao" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
-        <Button Text="Cadastrar novo cliente" x:Name="btnCCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+        <StackLayout Orientation="Horizontal">
+        <Button Text="Cadastrar" x:Name="btnCCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-        <Button Text="Atualizar Cliente" x:Name="btnACliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"
+        <Button Text="Atualizar" x:Name="btnACliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-        <Button Text="Listar Clientes" x:Name="btnLCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Apagar" x:Name="btnApagarCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+            <Button Text="Listar" x:Name="btnLCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

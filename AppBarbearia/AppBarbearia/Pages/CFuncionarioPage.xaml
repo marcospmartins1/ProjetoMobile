@@ -41,11 +41,18 @@
             </Picker.Items>
         </Picker>
 
-        <Button Text="Cadastrar novo funcionário" x:Name="btnCFuncionario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Cadastrar" x:Name="btnCFuncionario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-        <Button Text="Atualizar Funcionário" x:Name="btnAFuncionario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 0"
+            <Button Text="Atualizar" x:Name="btnAFuncionario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-        <Button Text="Listar Funcionários" x:Name="btnLFuncionários" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Apagar" x:Name="btnApagarFuncionários" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+            <Button Text="Listar" x:Name="btnLFuncionários" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
