@@ -20,7 +20,7 @@ namespace AppBarbearia.Pages
 
         private void BtnCliente_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CClientePage());
+            Navigation.PushAsync(new ListaCliente());
         }
 
         private void BtnFuncionario_Clicked(object sender, EventArgs e)

@@ -37,16 +37,9 @@
         <Entry x:Name="entryObservacao" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
         <StackLayout Orientation="Horizontal">
-        <Button Text="Cadastrar" x:Name="btnCCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-        <Button Text="Atualizar" x:Name="btnACliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-        </StackLayout>
-
-        <StackLayout Orientation="Horizontal">
-            <Button Text="Apagar" x:Name="btnApagarCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-            <Button Text="Listar" x:Name="btnLCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
+            <Button Text="Cadastrar" x:Name="btnCCliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnCCliente_Clicked"/>
+            <Button Text="Atualizar" x:Name="btnACliente" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
         </StackLayout>
     </StackLayout>
