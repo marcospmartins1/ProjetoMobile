@@ -9,13 +9,13 @@
             <Label Text="Agendamentos" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
 
             <Label Text="Nome do cliente: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
-            <Picker x:Name="pickerNomeCliente" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0"></Picker>
+            <Entry x:Name="entryNomeClienteA" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
             <Label Text="Nome do funcionário: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
-            <Picker x:Name="pickerNomeFuncionário" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0"></Picker>
+            <Entry x:Name="entryNomeFuncionarioA" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
             <Label Text="Serviço: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
-            <Picker x:Name="pickerServiço" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0"></Picker>
+            <Entry x:Name="entryServicoA" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
             <StackLayout Orientation="Horizontal">
             <Label Text="Horário" TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 5" HorizontalOptions="StartAndExpand"/>
@@ -23,7 +23,7 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <TimePicker TextColor="Black" Margin="10, 0, 10, 0" HorizontalOptions="StartAndExpand"></TimePicker>
+                <TimePicker TextColor="Black" Margin="10, 0, 10, 0" HorizontalOptions="StartAndExpand" x:Name="PickerTimerAgendamento"></TimePicker>
                 <Picker x:Name="pickerDuracaoAgendamento" Title="Escolha" TextColor="Black" Margin="10, 0, 10, 0" HorizontalOptions="FillAndExpand">
                     <Picker.Items>
                         <x:String>10 Min</x:String>
@@ -51,19 +51,12 @@
                     </Picker.Items>
                 </Picker>
             </StackLayout>
-            
+
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cadastrar" x:Name="btnCAgendamento" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-                <Button Text="Atualizar" x:Name="btnAAgendamento" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-            </StackLayout>
-            
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Apagar" x:Name="btnApagarAgendamento" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
-                <Button Text="Listar" x:Name="btnLAgendamento" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnCAgendamento_Clicked"/>
+                <Button Text="Atualizar" x:Name="btnLAgendamento" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnLAgendamento_Clicked"/>
             </StackLayout>
 
         </StackLayout>

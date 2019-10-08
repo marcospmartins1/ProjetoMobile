@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppBarbearia.Models
 {
-    class ModelFuncionario
+    public class ModelFuncionario
     {
         public int ID { get; set; }
         public string nome_funcionario { get; set; }

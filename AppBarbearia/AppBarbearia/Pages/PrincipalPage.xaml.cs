@@ -25,22 +25,22 @@ namespace AppBarbearia.Pages
 
         private void BtnFuncionario_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CFuncionarioPage());
+            Navigation.PushAsync(new ListaFuncionario());
         }
 
         private void BtnPromocao_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CPromocoesPage());
+            Navigation.PushAsync(new ListaPromocoes());
         }
 
         private void BtnAgendar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AgendamentoPage());
+            Navigation.PushAsync(new ListaAgendamentos());
         }
 
         private void BtnServico_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CServicoPage());
+            Navigation.PushAsync(new ListaServico());
         }
     }
 }

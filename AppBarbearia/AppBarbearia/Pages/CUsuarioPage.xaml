@@ -19,10 +19,10 @@
         <Label Text="E-mail: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
         <Entry x:Name="entryEmailUsuario" TextColor="Black" Keyboard="Email" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
-        <Button Text="Registrar" x:Name="btnCUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
+        <Button Text="Registrar" x:Name="btnRUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnCUsuario_Clicked"/>
-        <Button Text="Limpar dados" x:Name="btnLimparUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 5"
-                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnLimparUsuario_Clicked"/>
+        <Button Text="Atualizar" x:Name="btnAUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 0, 10, 5"
+                BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnAUsuario_Clicked"/>
     </StackLayout>
     
 </ContentPage>

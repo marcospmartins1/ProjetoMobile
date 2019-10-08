@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using AppBarbearia.Pages;
 
+using AppBarbearia.Classes;
+
 namespace AppBarbearia
 {
     public partial class MainPage : ContentPage
@@ -28,19 +30,25 @@ namespace AppBarbearia
 
         private void BtnEntrar_Clicked(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(entryUsuario.Text) ||
+            if (string.IsNullOrEmpty(entryUsuario.Text) ||
                string.IsNullOrEmpty(entrySenha.Text))
             {
                 DisplayAlert("Erro..", "Não deixe os campos em branco!", "Tente novamente");
             }
-            else if (entryUsuario.Text == "admin" && entrySenha.Text == "admin")
-            {
-                Navigation.PushAsync(new MenuPage());
-            }
             else
             {
-                DisplayAlert("Erro..", "Usuário ou senha incorretos!", "Tente novamente");
-            }
+                Usuario usuario = new Usuario();
+                bool resultadoLogin = usuario.Login(entryUsuario.Text, entrySenha.Text);
+
+                if (resultadoLogin == true)
+                {
+                    Navigation.PushAsync(new PrincipalPage());
+                }
+                else
+                {
+                    DisplayAlert("Erro..", "Usuário ou senha incorretos!", "Tente novamente");
+                }
+            }          
         }
     }
 }

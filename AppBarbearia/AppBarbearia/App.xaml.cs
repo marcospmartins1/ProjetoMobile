@@ -22,6 +22,10 @@ namespace AppBarbearia
 
             Conexao.Execute("CREATE TABLE IF NOT EXISTS cliente (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome_cliente TEXT (255) NOT NULL, cpf BIGINTEGER NOT NULL, data_nascimento TEXT (15) NOT NULL, sexo TEXT (15) NOT NULL, email TEXT (255) NOT NULL, telefone_celular INTEGER (15) NOT NULL, observacao TEXT (255) NOT NULL)");
             Conexao.Execute("CREATE TABLE IF NOT EXISTS funcionario (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome_funcionario TEXT (255) NOT NULL, cpf BIGINTEGER NOT NULL, data_nascimento TEXT (15) NOT NULL, sexo TEXT (15) NOT NULL, email TEXT (255) NOT NULL, telefone_celular INTEGER (15) NOT NULL, horario_atendimento TEXT (255) NOT NULL)");
+            Conexao.Execute("CREATE TABLE IF NOT EXISTS promocao (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, status TEXT (50) NOT NULL, nome_promocao TEXT (255) NOT NULL, descricao TEXT (255) NOT NULL, tempo TEXT (50) NOT NULL, valor INTEGER NOT NULL)");
+            Conexao.Execute("CREATE TABLE IF NOT EXISTS servico (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, status TEXT (50) NOT NULL, nome_servico TEXT (255) NOT NULL, descricao TEXT (255) NOT NULL, tempo TEXT (50) NOT NULL, valor INTEGER NOT NULL)");
+            Conexao.Execute("CREATE TABLE IF NOT EXISTS usuario (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, usuario TEXT (100) NOT NULL, senha TEXT (255) NOT NULL, email TEXT (255) NOT NULL)");
+            Conexao.Execute("CREATE TABLE IF NOT EXISTS agendamento (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome_cliente TEXT (255) NOT NULL, nome_funcionario TEXT (255) NOT NULL, servico TEXT (255) NOT NULL, horario TEXT (50) NOT NULL, duracao TEXT (50) NOT NULL)");
 
             InitializeComponent();
 

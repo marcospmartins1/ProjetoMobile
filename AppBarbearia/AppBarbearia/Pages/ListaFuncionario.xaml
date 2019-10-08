@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBarbearia.Pages.ListaCliente">
+             x:Class="AppBarbearia.Pages.ListaFuncionario">
     
     <StackLayout>
-    <ScrollView Orientation="Horizontal">
-        <StackLayout>
-            <Grid BackgroundColor="Orange">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="300"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="200"/>
-                    <ColumnDefinition Width="140"/>
-                    <ColumnDefinition Width="300"/>
+        <ScrollView Orientation="Horizontal">
+            <StackLayout>
+                <Grid BackgroundColor="Orange">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="300"/>
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0" Grid.Row="0" Text="ID" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
                     <Label Grid.Column="1" Grid.Row="0" Text="Nome" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
@@ -27,27 +27,27 @@
                     <Label Grid.Column="4" Grid.Row="0" Text="Sexo" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
                     <Label Grid.Column="5" Grid.Row="0" Text="Email" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
                     <Label Grid.Column="6" Grid.Row="0" Text="Telefone" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="7" Grid.Row="0" Text="Observação" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-            </Grid>
+                    <Label Grid.Column="7" Grid.Row="0" Text="Horario" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
+                </Grid>
 
-                <ListView x:Name="listViewCliente" BackgroundColor="White" HasUnevenRows="True">
+                <ListView x:Name="listViewFuncionario" BackgroundColor="White" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.ContextActions>
                                     <MenuItem Text="Atualizar" 
-                                          x:Name="MenuItemAtualizarCliente" 
-                                          Clicked="MenuItemAtualizarCliente_Clicked" 
+                                          x:Name="MenuItemAtualizarFuncionario" 
+                                          Clicked="MenuItemAtualizarFuncionario_Clicked" 
                                           CommandParameter="{Binding .}" 
                                           IsDestructive="False" />
                                     <MenuItem Text="Apagar" 
-                                          x:Name="MenuItemApagarCliente" 
-                                          Clicked="MenuItemApagarCliente_Clicked" 
+                                          x:Name="MenuItemApagarFuncionario" 
+                                          Clicked="MenuItemApagarFuncionario_Clicked" 
                                           CommandParameter="{Binding .}" 
                                           IsDestructive="True" />
                                     <MenuItem Text="Apagar Tudo" 
-                                          x:Name="MenuItemApagarTudoCliente" 
-                                          Clicked="MenuItemApagarTudoCliente_Clicked" 
+                                          x:Name="MenuItemApagarTudoFuncionario" 
+                                          Clicked="MenuItemApagarTudoFuncionario_Clicked" 
                                           CommandParameter="{Binding .}" 
                                           IsDestructive="True" />
                                 </ViewCell.ContextActions>
@@ -68,25 +68,24 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label  Grid.Column="0" Text="{Binding ID}" TextColor="Black"/>
-                                    <Label  Grid.Column="1" Text="{Binding nome_cliente}" TextColor="Black"/>
+                                    <Label  Grid.Column="1" Text="{Binding nome_funcionario}" TextColor="Black"/>
                                     <Label  Grid.Column="2" Text="{Binding cpf}" TextColor="Black"/>
                                     <Label Grid.Column="3" Text="{Binding data_nascimento}" TextColor="Black"/>
                                     <Label Grid.Column="4" Text="{Binding sexo}" TextColor="Black"/>
                                     <Label Grid.Column="5" Text="{Binding email}" TextColor="Black"/>
                                     <Label Grid.Column="6" Text="{Binding telefone_celular}" TextColor="Black"/>
-                                    <Label Grid.Column="7" Text="{Binding observacao}" TextColor="Black"/>
+                                    <Label Grid.Column="7" Text="{Binding horario_atendimento}" TextColor="Black"/>
                                 </Grid>
-
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </StackLayout>
-    </ScrollView>
+        </ScrollView>
         <StackLayout Orientation="Horizontal">
-            <Button Text="Adicionar" x:Name="buttonAdicionarCliente" Clicked="ButtonAdicionarCliente_Clicked" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
+            <Button Text="Adicionar" x:Name="buttonAdicionarFuncionario" Clicked="ButtonAdicionarFuncionario_Clicked" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"
                     BackgroundColor="Orange" BorderRadius="10" TextColor="White" />
-            <Button Text="Atualizar lista" x:Name="buttonAtualizarListaCliente" Clicked="ButtonAtualizarListaCliente_Clicked" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
+            <Button Text="Atualizar lista" x:Name="buttonAtualizarListaFuncionario" Clicked="ButtonAtualizarListaFuncionario_Clicked" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="0, 10, 10, 5"
                     BackgroundColor="Orange" BorderRadius="10" TextColor="White"/>
         </StackLayout>
     </StackLayout>
