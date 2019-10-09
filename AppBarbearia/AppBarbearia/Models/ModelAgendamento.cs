@@ -12,5 +12,6 @@ namespace AppBarbearia.Models
         public string servico { get; set; }
         public string horario { get; set; }
         public string duracao { get; set; }
+        public string data { get; set; }
     }
 }

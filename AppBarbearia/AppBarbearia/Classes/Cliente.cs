@@ -25,7 +25,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"INSERT INTO cliente (nome_cliente, cpf, data_nascimento, sexo, email, telefone_celular, observacao) VALUES ('{nome}', {cpf}, '{data}', '{sexo}', '{email}', '{telefone}', '{observacao}') ";
+                var query = $"INSERT INTO cliente (nome_cliente, cpf, data_nascimento, sexo, email, telefone_celular, observacao) VALUES ('{nome}', {cpf}, '{data}', '{sexo.SelectedItem}', '{email}', '{telefone}', '{observacao}') ";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;
@@ -41,7 +41,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"UPDATE cliente SET nome_cliente = '{nome}', cpf = {cpf}, data_nascimento = '{data}', sexo = '{sexo}', email = '{email}', telefone_celular = '{telefone}', observacao = '{observacao}' WHERE ID = {id}";
+                var query = $"UPDATE cliente SET nome_cliente = '{nome}', cpf = {cpf}, data_nascimento = '{data}', sexo = '{sexo.SelectedItem}', email = '{email}', telefone_celular = '{telefone}', observacao = '{observacao}' WHERE ID = {id}";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;

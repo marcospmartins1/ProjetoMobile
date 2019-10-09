@@ -27,7 +27,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"INSERT INTO promocao (status, nome_promocao, descricao, tempo, valor) VALUES ('{status}', {nome}, '{descricao}', '{tempo}', '{valor}')";
+                var query = $"INSERT INTO promocao (status, nome_promocao, descricao, tempo, valor) VALUES ('{status.SelectedItem}', '{nome}', '{descricao}', '{tempo.SelectedItem}', '{valor}')";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;
@@ -42,7 +42,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"UPDATE promocao SET status = '{status}', nome_promocao = {nome}, descricao = '{descricao}', tempo = '{tempo}', valor = '{valor}' WHERE ID = {id}";
+                var query = $"UPDATE promocao SET status = '{status.SelectedItem}', nome_promocao = '{nome}', descricao = '{descricao}', tempo = '{tempo.SelectedItem}', valor = '{valor}' WHERE ID = {id}";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;

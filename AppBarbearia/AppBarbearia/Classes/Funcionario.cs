@@ -26,7 +26,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"INSERT INTO funcionario (nome_funcionario, cpf, data_nascimento, sexo, email, telefone_celular, horario_atendimento) VALUES ('{nome}', {cpf}, '{data}', '{sexo}', '{email}', '{telefone}', '{horario}') ";
+                var query = $"INSERT INTO funcionario (nome_funcionario, cpf, data_nascimento, sexo, email, telefone_celular, horario_atendimento) VALUES ('{nome}', {cpf}, '{data}', '{sexo.SelectedItem}', '{email}', '{telefone}', '{horario.SelectedItem}') ";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;
@@ -42,7 +42,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"UPDATE funcionario SET nome_funcionario = '{nome}', cpf = {cpf}, data_nascimento = '{data}', sexo = '{sexo}', email = '{email}', telefone_celular = '{telefone}', horario_atendimento = '{horario}' WHERE ID = {id}";
+                var query = $"UPDATE funcionario SET nome_funcionario = '{nome}', cpf = {cpf}, data_nascimento = '{data}', sexo = '{sexo.SelectedItem}', email = '{email}', telefone_celular = '{telefone}', horario_atendimento = '{horario.SelectedItem}' WHERE ID = {id}";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;

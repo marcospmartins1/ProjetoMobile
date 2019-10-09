@@ -31,7 +31,7 @@ namespace AppBarbearia.Pages
             }
             else
             {
-                bool resultadoInsert = agendamento.Inserir(entryNomeClienteA.Text, entryNomeFuncionarioA.Text, entryServicoA.Text, PickerTimerAgendamento, pickerDuracaoAgendamento);
+                bool resultadoInsert = agendamento.Inserir(entryNomeClienteA.Text, entryNomeFuncionarioA.Text, entryServicoA.Text, PickerTimerAgendamento, pickerDuracaoAgendamento, DatePickerData);
                 if (resultadoInsert == true)
                 {
                     DisplayAlert("Sucesso!", "Serviço cadastrado com sucesso.", "OK");
@@ -39,7 +39,7 @@ namespace AppBarbearia.Pages
                     entryNomeFuncionarioA.Text = "";
                     entryServicoA.Text = "";
 
-                    Navigation.PushAsync(new ListaServico());
+                    Navigation.PopAsync();
                 }
                 else
                 {

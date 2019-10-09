@@ -25,13 +25,13 @@ namespace AppBarbearia
 
         private void BtnNovaConta_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new CUsuarioPage());
+            Navigation.PushAsync(new Usuario2Page());
         }
 
         private void BtnEntrar_Clicked(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(entryUsuario.Text) ||
-               string.IsNullOrEmpty(entrySenha.Text))
+                string.IsNullOrEmpty(entrySenha.Text))
             {
                 DisplayAlert("Erro..", "Não deixe os campos em branco!", "Tente novamente");
             }
@@ -42,7 +42,7 @@ namespace AppBarbearia
 
                 if (resultadoLogin == true)
                 {
-                    Navigation.PushAsync(new PrincipalPage());
+                    Navigation.PushAsync(new MenuPage());
                 }
                 else
                 {

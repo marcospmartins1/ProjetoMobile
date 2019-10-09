@@ -47,7 +47,7 @@ namespace AppBarbearia.Pages
                     entryTelefone.Text = "";
                     entryObservacao.Text = "";
 
-                    Navigation.PushAsync(new ListaCliente());
+                    Navigation.PopAsync();
                 }
                 else
                 {
@@ -55,5 +55,6 @@ namespace AppBarbearia.Pages
                 }
             }
         }
+
     }
 }

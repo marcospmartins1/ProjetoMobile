@@ -51,6 +51,8 @@
                     </Picker.Items>
                 </Picker>
             </StackLayout>
+            <Label Text="Data:" TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 5" HorizontalOptions="StartAndExpand"/>
+            <DatePicker TextColor="Black" Margin="10, 0, 10, 0" HorizontalOptions="StartAndExpand" x:Name="DatePickerData"></DatePicker>
 
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cadastrar" x:Name="btnCAgendamento" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 10, 10, 5"

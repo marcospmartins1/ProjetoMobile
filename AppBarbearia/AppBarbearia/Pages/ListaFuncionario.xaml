@@ -20,17 +20,17 @@
                         <ColumnDefinition Width="140"/>
                         <ColumnDefinition Width="300"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Grid.Row="0" Text="ID" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="1" Grid.Row="0" Text="Nome" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="2" Grid.Row="0" Text="CPF" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="3" Grid.Row="0" Text="Data de nascimento" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="4" Grid.Row="0" Text="Sexo" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="5" Grid.Row="0" Text="Email" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="6" Grid.Row="0" Text="Telefone" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="7" Grid.Row="0" Text="Horario" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
+                    <Label Grid.Column="0" Grid.Row="0" Text="ID" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="1" Grid.Row="0" Text="Nome" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="2" Grid.Row="0" Text="CPF" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="3" Grid.Row="0" Text="Data de nascimento" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="4" Grid.Row="0" Text="Sexo" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="5" Grid.Row="0" Text="Email" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="6" Grid.Row="0" Text="Telefone" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="7" Grid.Row="0" Text="Horario" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
                 </Grid>
 
-                <ListView x:Name="listViewFuncionario" BackgroundColor="White" HasUnevenRows="True">
+                <ListView x:Name="listViewFuncionario" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -67,14 +67,14 @@
                                         <ColumnDefinition Width="300"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <Label  Grid.Column="0" Text="{Binding ID}" TextColor="Black"/>
-                                    <Label  Grid.Column="1" Text="{Binding nome_funcionario}" TextColor="Black"/>
-                                    <Label  Grid.Column="2" Text="{Binding cpf}" TextColor="Black"/>
-                                    <Label Grid.Column="3" Text="{Binding data_nascimento}" TextColor="Black"/>
-                                    <Label Grid.Column="4" Text="{Binding sexo}" TextColor="Black"/>
-                                    <Label Grid.Column="5" Text="{Binding email}" TextColor="Black"/>
-                                    <Label Grid.Column="6" Text="{Binding telefone_celular}" TextColor="Black"/>
-                                    <Label Grid.Column="7" Text="{Binding horario_atendimento}" TextColor="Black"/>
+                                    <Label  Grid.Column="0" Text="{Binding ID}" TextColor="Black" FontSize="10"/>
+                                    <Label  Grid.Column="1" Text="{Binding nome_funcionario}" TextColor="Black" FontSize="10"/>
+                                    <Label  Grid.Column="2" Text="{Binding cpf}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="3" Text="{Binding data_nascimento}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="4" Text="{Binding sexo}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="5" Text="{Binding email}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="6" Text="{Binding telefone_celular}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="7" Text="{Binding horario_atendimento}" TextColor="Black" FontSize="10"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

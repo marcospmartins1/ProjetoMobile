@@ -40,7 +40,7 @@ namespace AppBarbearia.Pages
                     entryDescricaoServico.Text = "";
                     entryValorServico.Text = "";
 
-                    Navigation.PushAsync(new ListaServico());
+                    Navigation.PopAsync();
                 }
                 else
                 {

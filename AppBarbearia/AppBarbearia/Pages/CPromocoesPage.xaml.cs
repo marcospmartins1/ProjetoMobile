@@ -41,7 +41,7 @@ namespace AppBarbearia.Pages
                         entryDescricaoPromocao.Text = "";
                         entryValorPromocao.Text = "";
 
-                        Navigation.PushAsync(new ListaPromocoes());
+                        Navigation.PopAsync();
                     }
                     else
                     {

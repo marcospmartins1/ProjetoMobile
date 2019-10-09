@@ -45,7 +45,7 @@ namespace AppBarbearia.Pages
                         entryEmailFuncionario.Text = "";
                         entryTelefoneFuncionario.Text = "";
 
-                        Navigation.PushAsync(new ListaFuncionario());
+                        Navigation.PopAsync();
                     }
                     else
                     {

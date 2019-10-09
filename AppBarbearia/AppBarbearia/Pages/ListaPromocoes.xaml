@@ -18,15 +18,15 @@
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition Width="150"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Grid.Row="0" Text="ID" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="1" Grid.Row="0" Text="Status" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="2" Grid.Row="0" Text="Nome da promoção" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="3" Grid.Row="0" Text="Descrição" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="4" Grid.Row="0" Text="Tempo" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
-                    <Label Grid.Column="5" Grid.Row="0" Text="Valor" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold"/>
+                    <Label Grid.Column="0" Grid.Row="0" Text="ID" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="1" Grid.Row="0" Text="Status" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="2" Grid.Row="0" Text="Nome da promoção" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="3" Grid.Row="0" Text="Descrição" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="4" Grid.Row="0" Text="Tempo" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Column="5" Grid.Row="0" Text="Valor" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
                 </Grid>
 
-                <ListView x:Name="listViewPromocoes" BackgroundColor="White" HasUnevenRows="True">
+                <ListView x:Name="listViewPromocoes" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -61,12 +61,12 @@
                                         <ColumnDefinition Width="150"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <Label  Grid.Column="0" Text="{Binding ID}" TextColor="Black"/>
-                                    <Label  Grid.Column="1" Text="{Binding status}" TextColor="Black"/>
-                                    <Label  Grid.Column="2" Text="{Binding nome_promocao}" TextColor="Black"/>
-                                    <Label Grid.Column="3" Text="{Binding descricao}" TextColor="Black"/>
-                                    <Label Grid.Column="4" Text="{Binding tempo}" TextColor="Black"/>
-                                    <Label Grid.Column="5" Text="{Binding valor}" TextColor="Black"/>
+                                    <Label  Grid.Column="0" Text="{Binding ID}" TextColor="Black" FontSize="10"/>
+                                    <Label  Grid.Column="1" Text="{Binding status}" TextColor="Black" FontSize="10"/>
+                                    <Label  Grid.Column="2" Text="{Binding nome_promocao}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="3" Text="{Binding descricao}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="4" Text="{Binding tempo}" TextColor="Black" FontSize="10"/>
+                                    <Label Grid.Column="5" Text="{Binding valor}" TextColor="Black" FontSize="10"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

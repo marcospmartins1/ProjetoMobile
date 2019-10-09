@@ -26,7 +26,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"INSERT INTO usuario (usuario, senha, email) VALUES ('{nome}', {senha}, '{email}')";
+                var query = $"INSERT INTO usuario (usuario, senha, email) VALUES ('{nome}', '{senha}', '{email}')";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;
@@ -40,7 +40,7 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"UPDATE usuario SET usuario = '{nome}', senha = {senha}, email = '{email}' WHERE ID = {id}";
+                var query = $"UPDATE usuario SET usuario = '{nome}', senha = '{senha}', email = '{email}' WHERE ID = {id}";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;
@@ -83,21 +83,17 @@ namespace AppBarbearia.Classes
         {
             try
             {
-                var query = $"SELECT count (*) FROM usuario WHERE usuario = '{usuario}' AND senha = '{senha}'";
-                int resultadoSQL = ((App)Application.Current).Conexao.Execute(query);
+                var query = $"SELECT COUNT (*) FROM usuario WHERE usuario = '{usuario}' AND senha = '{senha}'";
+                var resultadoSQL = ((App)Application.Current).Conexao.Query<ModelUsuario>(query);
 
-                if (resultadoSQL == 1)
+                if (resultadoSQL.Count == 1)
                 {
                     return true;
-                }
-                else if( resultadoSQL == 2)
-                {
-                    return false;
                 }
                 else
                 {
                     return false;
-                }
+                }              
             }
             catch (Exception ex)
             {

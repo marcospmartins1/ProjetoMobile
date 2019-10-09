@@ -23,11 +23,13 @@ namespace AppBarbearia.Classes
             }
         }
 
-        public bool Inserir(string nomeC, string nomeF, string servico, TimePicker horario, Picker duracao)
+        public bool Inserir(string nomeC, string nomeF, string servico, TimePicker horario, Picker duracao, DatePicker data)
         {
             try
             {
-                var query = $"INSERT INTO agendamento (nome_cliente, nome_funcionario, servico, horario, duracao) VALUES ('{nomeC}', {nomeF}, '{servico}', '{horario}', '{duracao}')";
+                DateTime dataNova = Convert.ToDateTime(data.Date);
+                var horarioNovo = horario.Time.ToString();
+                var query = $"INSERT INTO agendamento (nome_cliente, nome_funcionario, servico, horario, duracao, data) VALUES ('{nomeC}', '{nomeF}', '{servico}', '{horarioNovo}', '{duracao.SelectedItem}', '{dataNova}')";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;
@@ -37,11 +39,13 @@ namespace AppBarbearia.Classes
                 throw new Exception("Houve um erro ao inserir.\nDetalhes:" + ex.Message);
             }
         }
-        public bool Update(string nomeC, string nomeF, string servico, Picker horario, Picker duracao, int id)
+        public bool Update(string nomeC, string nomeF, string servico, TimePicker horario, Picker duracao, DatePicker data, int id)
         {
             try
             {
-                var query = $"UPDATE agendamento SET nome_cliente = '{nomeC}', nome_funcionario = {nomeF}, servico = '{servico}', horario = '{horario}', duracao = '{duracao}' WHERE ID = {id}";
+                DateTime dataNova = Convert.ToDateTime(data.Date);
+                var horarioNovo = horario.Time.ToString();
+                var query = $"UPDATE agendamento SET nome_cliente = '{nomeC}', nome_funcionario = '{nomeF}', servico = '{servico}', horario = '{horarioNovo}', duracao = '{duracao.SelectedItem}', data = '{dataNova}' WHERE ID = {id}";
                 ((App)Application.Current).Conexao.Execute(query);
 
                 return true;

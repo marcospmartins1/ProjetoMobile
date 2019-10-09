@@ -40,7 +40,7 @@ namespace AppBarbearia.Pages
                     entrySenhaUsuario.Text = "";
                     entryEmailUsuario.Text = "";
 
-                    Navigation.PushAsync(new ListaUsuario());
+                    Navigation.PopAsync();
                 }
                 else
                 {

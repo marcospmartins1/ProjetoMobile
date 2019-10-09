@@ -5,19 +5,19 @@
              BackgroundColor="White">
 
     <StackLayout>
-        <Label Text="Registre-se agora" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
+        <Label Text="Cadastro de usuários" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15" HorizontalTextAlignment="Center"/>
 
         <Label Text="Nome do usuário: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
         <Entry x:Name="entryNomeUsuario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
         <Label Text="Senha: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
-        <Entry x:Name="entrySenhaUsuario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+        <Entry x:Name="entrySenhaUsuario" TextColor="Black" IsPassword="True" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
         <Label Text="Confirmar a senha: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
-        <Entry x:Name="entryConfirmaSenhaUsuario" TextColor="Black" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+        <Entry x:Name="entryConfirmaSenhaUsuario" TextColor="Black" IsPassword="True" Keyboard="Text" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
         <Label Text="E-mail: " TextColor="Black" HorizontalTextAlignment="Start" Margin="10, 5, 10, 0"/>
-        <Entry x:Name="entryEmailUsuario" TextColor="Black" Keyboard="Email" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
+        <Entry x:Name="entryEmailUsuario" TextColor="Black" IsPassword="True" Keyboard="Email" HorizontalTextAlignment="Start" Margin="10, 0, 10, 0"/>
 
         <Button Text="Registrar" x:Name="btnRUsuario" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Margin="10, 5, 10, 5"
                 BackgroundColor="Orange" BorderRadius="10" TextColor="White" Clicked="BtnCUsuario_Clicked"/>
