@@ -30,7 +30,7 @@
                     <Label Grid.Column="7" Grid.Row="0" Text="Horario" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
                 </Grid>
 
-                <ListView x:Name="listViewFuncionario" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView x:Name="listViewFuncionario" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemSelected="ListViewFuncionario_ItemSelected"[>
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

@@ -48,9 +48,9 @@ namespace AppBarbearia.Pages
             }
         }
 
-        private void BtnLAgendamento_Clicked(object sender, EventArgs e)
+        private void BtnAAgendamento_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PopAsync();
         }
     }
 }

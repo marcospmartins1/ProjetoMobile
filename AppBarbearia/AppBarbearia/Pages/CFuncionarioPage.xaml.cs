@@ -57,7 +57,7 @@ namespace AppBarbearia.Pages
 
         private void BtnAFuncionários_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PopAsync();
         }
     }
 }

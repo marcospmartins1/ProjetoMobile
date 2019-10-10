@@ -31,7 +31,7 @@ namespace AppBarbearia.Pages
 
         private void MenuItemAtualizarUsuario_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new CUsuarioPage());
         }
 
         private async void MenuItemApagarServicoUsuario_Clicked(object sender, EventArgs e)
@@ -96,6 +96,11 @@ namespace AppBarbearia.Pages
         private void ButtonAtualizarListaUsuario_Clicked(object sender, EventArgs e)
         {
             CarregarInformacoes();
+        }
+
+        private void ListViewUsuario_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Navigation.PushAsync(new CUsuarioPage());
         }
     }
 }

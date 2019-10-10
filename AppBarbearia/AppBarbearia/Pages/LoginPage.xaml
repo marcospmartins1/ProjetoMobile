@@ -6,10 +6,11 @@
              BackgroundImage="Fundopadrao">
 
     <StackLayout>
-        <Image Source=""
+        <Image Source="LogoFundo"
                Margin="50"
                WidthRequest="200"
-               HeightRequest="100"/>
+               HeightRequest="100"></Image>
+
         
         <Entry x:Name="entryUsuario" TextColor="Black" FontSize="20" Placeholder="Usuário" PlaceholderColor="Black" HorizontalTextAlignment="Center" Margin="10"/>
         

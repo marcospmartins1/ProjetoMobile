@@ -79,7 +79,7 @@ namespace AppBarbearia.Classes
             }
         }
 
-        public bool Login (string usuario, string senha)
+        public bool Login(string usuario, string senha)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace AppBarbearia.Classes
                 else
                 {
                     return false;
-                }              
+                }
             }
             catch (Exception ex)
             {

@@ -29,7 +29,7 @@
                     <Label Grid.Column="6" Grid.Row="0" Text="Data" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
                 </Grid>
 
-                <ListView x:Name="listViewAgendamentos" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView x:Name="listViewAgendamentos" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemSelected="ListViewAgendamentos_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

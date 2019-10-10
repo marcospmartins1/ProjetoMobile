@@ -22,7 +22,7 @@
                     <Label Grid.Column="3" Grid.Row="0" Text="Email" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
                 </Grid>
 
-                <ListView x:Name="listViewUsuario" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView x:Name="listViewUsuario" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemSelected="ListViewUsuario_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

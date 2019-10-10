@@ -32,7 +32,7 @@ namespace AppBarbearia.Pages
 
         private void MenuItemAtualizarPromocao_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new CPromocoesPage());
         }
 
         private async void MenuItemApagarPromocao_Clicked(object sender, EventArgs e)
@@ -97,6 +97,11 @@ namespace AppBarbearia.Pages
         private void ButtonAtualizarListaPromocao_Clicked(object sender, EventArgs e)
         {
             CarregarInformacoes();
+        }
+
+        private void ListViewPromocoes_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Navigation.PushAsync(new CPromocoesPage());
         }
     }
 }

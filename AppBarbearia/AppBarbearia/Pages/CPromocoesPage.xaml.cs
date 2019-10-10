@@ -53,7 +53,7 @@ namespace AppBarbearia.Pages
 
         private void BtnAPromoções_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PopAsync();
         }
     }
 }

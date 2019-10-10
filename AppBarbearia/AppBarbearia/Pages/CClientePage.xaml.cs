@@ -15,7 +15,6 @@ namespace AppBarbearia.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CClientePage : ContentPage
 	{
-
         protected Cliente cliente = new Cliente();
         public CClientePage ()
 		{
@@ -56,5 +55,9 @@ namespace AppBarbearia.Pages
             }
         }
 
+        private void BtnACliente_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 }

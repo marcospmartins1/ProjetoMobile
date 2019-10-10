@@ -14,6 +14,7 @@ namespace AppBarbearia.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListaCliente : ContentPage
 	{
+        protected ModelCliente model = new ModelCliente();
         protected Cliente cliente = new Cliente();
         public ListaCliente ()
 		{
@@ -29,7 +30,7 @@ namespace AppBarbearia.Pages
 
         private void MenuItemAtualizarCliente_Clicked(object sender, EventArgs e)
         {
-            
+            Navigation.PushAsync(new CClientePage());
         }
 
         private async void MenuItemApagarCliente_Clicked(object sender, EventArgs e)
@@ -94,6 +95,11 @@ namespace AppBarbearia.Pages
         private void ButtonAtualizarListaCliente_Clicked(object sender, EventArgs e)
         {
             CarregarInformacoes();
+        }
+
+        private void ListViewCliente_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Navigation.PushAsync(new CClientePage());
         }
     }
 }

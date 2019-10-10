@@ -32,7 +32,7 @@ namespace AppBarbearia.Pages
 
         private void MenuItemAtualizarAgendamento_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new AgendamentoPage());
         }
 
         private async void MenuItemApagarAgendamento_Clicked(object sender, EventArgs e)
@@ -97,6 +97,11 @@ namespace AppBarbearia.Pages
         private void ButtonAtualizarListaAgendamento_Clicked(object sender, EventArgs e)
         {
             CarregarInformacoes();
+        }
+
+        private void ListViewAgendamentos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Navigation.PushAsync(new AgendamentoPage());
         }
     }
 }

@@ -26,7 +26,7 @@
                     <Label Grid.Column="5" Grid.Row="0" Text="Valor" BackgroundColor="Orange" TextColor="White" FontAttributes="Bold" FontSize="15"/>
                 </Grid>
 
-                <ListView x:Name="listViewServicos" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True">
+                <ListView x:Name="listViewServicos" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemSelected="ListViewServicos_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

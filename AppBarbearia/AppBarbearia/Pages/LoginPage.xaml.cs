@@ -12,6 +12,8 @@ namespace AppBarbearia
 {
     public partial class MainPage : ContentPage
     {
+
+        protected Usuario usuario = new Usuario();
         public MainPage()
         {
             InitializeComponent();
@@ -37,9 +39,7 @@ namespace AppBarbearia
             }
             else
             {
-                Usuario usuario = new Usuario();
                 bool resultadoLogin = usuario.Login(entryUsuario.Text, entrySenha.Text);
-
                 if (resultadoLogin == true)
                 {
                     Navigation.PushAsync(new MenuPage());
@@ -48,7 +48,7 @@ namespace AppBarbearia
                 {
                     DisplayAlert("Erro..", "Usuário ou senha incorretos!", "Tente novamente");
                 }
-            }          
+            }
         }
     }
 }
